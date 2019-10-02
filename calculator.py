@@ -10,17 +10,19 @@ def calculator_2():
     while True:
         calc = input("> ")          # get user input
         tokens = calc.split(" ")    # tokenize user input
-        operator = tokens[0]
+        operator = tokens[0]        # identify the function to call
         # num1 = tokens[1]
         # num2 = tokens[2]
         # num3 = tokens[3]
         if operator == 'q':
-            return 
+            return
         elif operator == '+':
             answer = addition(int(tokens[1]), int(tokens[2]))
             # print(answer)
         elif operator == '-':
             answer = subtract(int(tokens[1]), int(tokens[2]))
+        elif operator == '*':
+            answer = multiply(int(tokens[1]), int(tokens[2]))
 
         print(answer)
 
