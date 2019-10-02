@@ -25,6 +25,8 @@ def calculator_2():
             answer = multiply(int(tokens[1]), int(tokens[2]))
         elif operator == '/':
             answer = divide(int(tokens[1]), int(tokens[2]))
+        elif operator == 'square':
+            answer = square(int(tokens[1]))
 
         print(answer)
 
