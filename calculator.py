@@ -23,6 +23,8 @@ def calculator_2():
             answer = subtract(int(tokens[1]), int(tokens[2]))
         elif operator == '*':
             answer = multiply(int(tokens[1]), int(tokens[2]))
+        elif operator == '/':
+            answer = divide(int(tokens[1]), int(tokens[2]))
 
         print(answer)
 
