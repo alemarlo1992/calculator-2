@@ -31,6 +31,10 @@ def calculator_2():
             answer = cube(int(tokens[1]))
         elif operator == "pow":
             answer = power(int(tokens[1]), int(tokens[2]))
+        elif operator == "mod":
+            answer = mod(int(tokens[1]), int(tokens[2]))
+        else:
+            print('Invalid operator!')
 
         print(answer)
 
